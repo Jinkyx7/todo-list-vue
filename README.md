@@ -10,6 +10,10 @@ A small todo list application built with Vue 3 and Vite. The app supports creati
 - Clear completed items or reset the whole list
 - Persist todos in the browser with `localStorage`
 
+## Screenshoot
+
+![Todo List Vue.js](./src/assets/Todo%20List%20Demo%20Screenshot.png)
+
 ## Tech Stack
 
 - Vue 3
@@ -21,18 +25,37 @@ A small todo list application built with Vue 3 and Vite. The app supports creati
 ## Project Structure
 
 ```text
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── router/
-│   ├── views/
-│   ├── App.vue
-│   └── main.js
-├── index.html
-├── package.json
-└── vite.config.js
+project-root/
+│
+├── public/                  # Public assets
+│
+├── src/                     # Source code
+│   ├── App.vue              # Root Vue component
+│   ├── main.js              # Entry point, Vue app initialization
+│   │
+│   ├── assets/              # Static assets (images, fonts, etc.)
+│   │   ├── logo.png         # Logo image
+│   │   └── screenshoot.png  # Screenshot image
+│   │
+│   ├── components/          # Vue components
+│   │   ├── TodoButton.vue   # Component for generic button
+│   │   ├── TodoCreator.vue  # Component for creating new todo items
+│   │   ├── TodoHeader.vue   # Component for header and navigation
+│   │   └── TodoItem.vue     # Component for displaying individual todo items
+│   │
+│   ├── router/              # Vue Router configuration
+│   │   └── index.js         # Router configuration file
+│   │
+│   ├── views/               # Vue views/pages
+│       ├── AboutView.vue    # About page view
+│       ├── NotFoundView.vue # 404 Not Found page view
+│       └── TodoView.vue     # Main todo list view
+│
+│── index.html               # Main HTML template
+├── README.md                # Project README file
+├── package.json             # Project dependencies and scripts
+└── ...
+
 ```
 
 ## Getting Started
